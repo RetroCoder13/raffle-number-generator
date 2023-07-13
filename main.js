@@ -4,7 +4,12 @@ document.addEventListener('mousedown',function(){
 
 function newNumber(prevNumbers,highestNumber){
     number = Math.round(Math.random() * highestNumber)
-    document.getElementById('number').innerHTML = number
+    if(prevNumbers[number]){
+        newNumber(prevNumbers,highestNumber)
+    } else {
+        document.getElementById('number').innerHTML = number
+        prevNumbers[number] = true
+    }
 }
 
 prevNumbers = []
