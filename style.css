@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Font;
+    src: url(Rajdhani-Regular.ttf);
+}
+
+h1{
+    font-family: Font;
+    vertical-align: middle;
+    text-align: center;
+    user-select: none;
+    font-size: 300px;
+}
+
+div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
